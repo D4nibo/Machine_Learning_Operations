@@ -1,0 +1,12 @@
+route:
+    group_by: ["..."]
+    group_wait: 0s
+    group_interval: 1s
+    repeat_interval: 1h
+    receiver: discord
+
+receivers:
+    - name: discord
+      discord_configs:
+          - webhook_url: https://discord.com/api/webhooks/1187442382057254912/582UFETo2BwZDCVoHnMFPXLFzoVKvvJeyKWQRrhoYCiNe5xIiRSii5j2O09-4S9vQ3GQ
+            send_resolved: false

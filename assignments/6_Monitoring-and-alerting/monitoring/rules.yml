@@ -1,0 +1,8 @@
+groups:
+    - name: example
+      rules:
+          - alert: ModelMockHighAccuracy
+            expr: model_result > 0.75
+            annotations:
+                summary: "Model mock accuracy is very high"
+                description: "Model mock accuracy is very high at {{ $value }}"
